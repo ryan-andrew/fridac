@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fridac"
+version = "0.1.1"
+description = "Frida CLI proxy that prepends a compatibility shim for old scripts on Frida 17+."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [{ name = "Ryan Andrew" }]
+dependencies = ["frida>=17", "frida-tools>=14"]
+keywords = ["frida", "instrumentation", "reverse-engineering", "compatibility"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development :: Debuggers",
+  "Topic :: Utilities",
+]
+
+[project.scripts]
+fridac = "fridac.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]

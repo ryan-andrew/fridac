@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/fridac/__init__.py
+src/fridac/__main__.py
+src/fridac/_embedded_shim.py
+src/fridac/cli.py
+src/fridac/shim.js
+src/fridac.egg-info/PKG-INFO
+src/fridac.egg-info/SOURCES.txt
+src/fridac.egg-info/dependency_links.txt
+src/fridac.egg-info/entry_points.txt
+src/fridac.egg-info/requires.txt
+src/fridac.egg-info/top_level.txt
+tests/test_cli.py
