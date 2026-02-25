@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fridac"
-version = "0.1.1"
+version = "0.1.2"
 description = "Frida CLI proxy that prepends a compatibility shim for old scripts on Frida 17+."
 readme = "README.md"
 requires-python = ">=3.8"

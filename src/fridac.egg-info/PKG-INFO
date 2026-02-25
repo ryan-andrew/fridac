@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: fridac
-Version: 0.1.1
+Version: 0.1.2
 Summary: Frida CLI proxy that prepends a compatibility shim for old scripts on Frida 17+.
 Author: Ryan Andrew
 License-Expression: MIT
@@ -19,7 +19,7 @@ Requires-Dist: frida-tools>=14
 
 # fridac
 
-`fridac` is a proxy for the `frida` CLI command.
+[`fridac`](https://github.com/ryan-andrew/fridac) is a proxy for the `frida` CLI command.
 
 It prepends a JavaScript compatibility shim to every script loaded with
 `-l/--load`, so older Frida scripts can keep running on Frida 17+.
@@ -28,6 +28,11 @@ It prepends a JavaScript compatibility shim to every script loaded with
 
 ```bash
 pip install fridac
+```
+
+Or if using an internal package repository:
+```bash
+pip install fridac --index-url https://pypi.org/simple
 ```
 
 This installs `frida>=17` and `frida-tools` as dependencies.

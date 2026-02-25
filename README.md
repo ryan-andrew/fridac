@@ -11,6 +11,11 @@ It prepends a JavaScript compatibility shim to every script loaded with
 pip install fridac
 ```
 
+Or if using an internal package repository:
+```bash
+pip install fridac --index-url https://pypi.org/simple
+```
+
 This installs `frida>=17` and `frida-tools` as dependencies.
 
 ## Usage
