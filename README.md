@@ -1,6 +1,6 @@
 # fridac
 
-`fridac` is a proxy for the `frida` CLI command.
+[`fridac`](https://github.com/ryan-andrew/fridac) is a proxy for the `frida` CLI command.
 
 It prepends a JavaScript compatibility shim to every script loaded with
 `-l/--load`, so older Frida scripts can keep running on Frida 17+.
